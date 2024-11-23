@@ -268,7 +268,7 @@ Uruchomienie testu należy wykonać poleceniem:
 
 ```bash
 
-python3 -m unittest discover tests
+python3 -B -m unittest discover tests
 ```
 
 Wynik wykonania testu:
