@@ -64,12 +64,7 @@ Po instalacji można zweryfikować instalację poleceniem:
 phpunit --version
 ```
 
-W przypadku instalacji globalnej PHPUnit-a po wykonaniu polecenia w katalogu głownym projektu:
-
-```bash
-composer dump-autoload
-```
-powinien pojawić się następujący (przykładowy) plik ```composer.json```:
+W przypadku instalacji globalnej PHPUnit-a po wykonaniu polecenia w katalogu głownym projektu należy utworzyć plik ```composer.json```:
 
 ```json
 {
@@ -79,6 +74,12 @@ powinien pojawić się następujący (przykładowy) plik ```composer.json```:
         }
     }
 }
+```
+
+Ostatnim etapem jest wykonanie polecenia:
+
+```bash
+composer dump-autoload 
 ```
 
 #### Instalacja dla projektu:
@@ -95,12 +96,7 @@ Następnie zweryfikować instalację poleceniem:
 ./vendor/bin/phpunit --version
 ```
 
-Po wykonaniu polecenia:
-
-```bash
-composer dump-autoload 
-```
-powinien pojawić się plik ```composer.json``` o przykładowej strukturze:
+Następnie należy utworzyć plik ```composer.json``` o przykładowej strukturze:
 
 ```json
 {
@@ -113,6 +109,11 @@ powinien pojawić się plik ```composer.json``` o przykładowej strukturze:
         "phpunit/phpunit": "^11"
     }
 }
+```
+Ostatnim etapem jest wykonanie polecenia:
+
+```bash
+composer dump-autoload 
 ```
 
 ### Krok 4. Przygotowanie projektu
